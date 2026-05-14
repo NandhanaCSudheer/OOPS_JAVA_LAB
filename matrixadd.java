@@ -14,6 +14,7 @@ class matrix{
         c2 = sc.nextInt();
         if(r1!=r2 || c1!=c2){
             System.out.println("Rows and columns should match!!!");
+            return;
         }
         else{
             m1 = new int[r1][c1];
@@ -34,6 +35,7 @@ class matrix{
         }
     }
     public void add(){
+        if(m1==null && m2==null) return;
         for(int i=0;i<r1;i++){
             for(int j=0;j<c1;j++){
                 m[i][j] = m1[i][j]+m2[i][j];
